@@ -7,10 +7,10 @@ import {
 function HomePage() {
 	return (
 		<div className="mainWrapper">
-			<h1 className="text-3xl md:text-5xl font-bold mb-20 mt-7 md:mt-0">
+			<h1 className="mb-20 text-3xl font-bold md:text-5xl mt-7 lg:mt-0">
 				ChatGPT
 			</h1>
-			<div className="flex mx-2 space-x-0 lg:space-x-5 text-center flex-col lg:flex-row">
+			<div className="flex flex-col mx-2 space-x-0 text-center lg:space-x-5 lg:flex-row">
 				{/* Examples */}
 				<div className="mb-7 lg:mb-0">
 					<div className="flex flex-col items-center justify-center mb-5 font-[700]">
