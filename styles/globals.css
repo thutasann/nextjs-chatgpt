@@ -10,6 +10,9 @@
 	.sidebarWrapper {
 		@apply bg-secondary max-w-xs min-h-screen overflow-y-auto md:min-w-[20rem] px-1 py-3;
 	}
+	.loginWrapper {
+		@apply bg-green h-screen flex flex-col items-center justify-center text-center;
+	}
 	.icon {
 		@apply h-8 w-8;
 	}
