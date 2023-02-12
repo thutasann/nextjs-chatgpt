@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*::selection {
+	@apply bg-green text-white;
+}
+
+@layer components {
+	.sidebarWrapper {
+		@apply bg-secondary max-w-xs h-screen overflow-y-auto md:min-w-[20rem] px-1 py-3;
+	}
+	.icon {
+		@apply h-8 w-8;
+	}
+
+	.infoText {
+		@apply p-4 bg-gray-700/50 rounded-lg max-w-[300px] hover:border hover:border-slate-500 cursor-pointer;
+	}
+
+	.mainWrapper {
+		@apply text-white flex flex-col items-center justify-center min-h-screen px-2;
+	}
+
+	.chatRow {
+		@apply rounded-lg px-5 py-3 text-sm flex items-center justify-center space-x-2 hover:bg-gray-700/70 cursor-pointer text-gray-300 transition-all duration-700 ease-out;
+	}
+}
