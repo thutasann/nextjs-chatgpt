@@ -1,10 +1,10 @@
 # CHATGPT CLONE 🤖
 
-This is the ChatGPT Clone with
+This is the ChatGPT Clone built with
 
 - 🚀 Nextjs13
 - 🚀 NextAuth
-- 🚀 OpenAI
+- 🚀 OpenAPI
 - 🚀 Firebase
 - 🚀 TailwindCSS
 - 🚀 SWR

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 *::selection {
-	@apply bg-green text-white;
+	@apply text-white bg-green;
 }
 
 @layer components {
@@ -11,10 +11,10 @@
 		@apply bg-secondary max-w-xs min-h-screen overflow-y-auto md:min-w-[20rem] px-1 py-3;
 	}
 	.loginWrapper {
-		@apply bg-green h-screen flex flex-col items-center justify-center text-center;
+		@apply flex flex-col items-center justify-center h-screen text-center bg-green;
 	}
 	.icon {
-		@apply h-8 w-8;
+		@apply w-8 h-8;
 	}
 
 	.infoText {
@@ -22,10 +22,10 @@
 	}
 
 	.mainWrapper {
-		@apply text-white flex flex-col items-center justify-center min-h-screen px-2;
+		@apply flex flex-col items-center justify-center min-h-screen px-2 text-white;
 	}
 
 	.chatRow {
-		@apply rounded-lg px-5 py-3 text-sm flex items-center justify-center space-x-2 hover:bg-gray-700/70 cursor-pointer text-gray-300 transition-all duration-700 ease-out;
+		@apply flex items-center justify-center px-5 py-3 space-x-2 text-sm text-gray-300 transition-all duration-700 ease-out rounded-lg cursor-pointer hover:bg-gray-700/70;
 	}
 }
