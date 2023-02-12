@@ -8,14 +8,14 @@
 
 @layer components {
 	.sidebarWrapper {
-		@apply bg-secondary max-w-xs h-screen overflow-y-auto md:min-w-[20rem] px-1 py-3;
+		@apply bg-secondary max-w-xs min-h-screen overflow-y-auto md:min-w-[20rem] px-1 py-3;
 	}
 	.icon {
 		@apply h-8 w-8;
 	}
 
 	.infoText {
-		@apply p-4 bg-gray-700/50 rounded-lg max-w-[300px] hover:border hover:border-slate-500 cursor-pointer;
+		@apply p-4 bg-gray-700/50 rounded-lg max-w-[300px] hover:border hover:border-slate-500 cursor-pointer text-xs lg:text-lg;
 	}
 
 	.mainWrapper {

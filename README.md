@@ -7,6 +7,6 @@ This is the ChatGPT Clone with
 - 🚀 OpenAI
 - 🚀 Firebase
 - 🚀 TailwindCSS
-- 🚀 useSWR
+- 🚀 SWR
 - 🚀 TypeScript
 - 🚀 TailwindCSS
