@@ -37,7 +37,8 @@ export default async function handler(
 		user: {
 			_id: 'ChatGPT',
 			name: 'ChatGPT',
-			avatar: 'https://i.imgur.com/7yUvePI.png',
+			avatar:
+				'https://nextjs-chatgpt.vercel.app/_next/image?url=%2Flogo.png&w=96&q=75',
 		},
 	};
 

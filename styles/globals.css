@@ -8,16 +8,14 @@
 
 @layer components {
 	.sidebarWrapper {
-		@apply bg-secondary max-w-xs min-h-screen overflow-y-auto md:min-w-[20rem] px-1 py-3;
+		@apply bg-secondary max-w-xs min-h-screen  md:min-w-[20rem] px-1 py-3;
 	}
 	.loginWrapper {
 		@apply flex flex-col items-center justify-center h-screen text-center bg-green;
 	}
-	.chatWrapper {
-		@apply flex flex-col h-screen overflow-hidden;
-	}
+
 	.mainWrapper {
-		@apply flex flex-col items-center justify-center min-h-screen px-2 text-white;
+		@apply flex flex-col items-center justify-center h-screen px-2 text-white;
 	}
 
 	.icon {
@@ -31,16 +29,19 @@
 	.chatRow {
 		@apply flex items-center justify-center px-5 py-3 space-x-2 text-sm text-gray-300 transition-all duration-700 ease-out rounded-lg cursor-pointer hover:bg-gray-700/70;
 	}
-
 	.chatForm {
-		@apply text-sm text-gray-400 bg-gray-700/50;
+		@apply fixed bottom-0 w-full text-sm text-gray-400 bg-gray-700 shadow-lg;
 	}
 
 	.chatInput {
-		@apply flex-1 bg-transparent focus:outline-none disabled:cursor-not-allowed disabled:text-gray-300;
+		@apply bg-transparent focus:outline-none w-[150px] md:w-[400px] xl:w-[800px] 2xl:w-[1450px] disabled:cursor-not-allowed disabled:text-gray-300;
 	}
 
 	.chatSubmitBtn {
 		@apply px-4 py-2 font-bold text-white transition-colors duration-700 ease-in-out rounded-md cursor-pointer bg-green hover:opacity-70 disabled:bg-gray-300 disabled:cursor-not-allowed disabled:text-slate-500;
+	}
+
+	.messgeWrapper::-webkit-scrollbar {
+		@apply bg-primary;
 	}
 }

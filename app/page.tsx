@@ -6,7 +6,7 @@ import {
 
 function HomePage() {
 	return (
-		<div className="mainWrapper">
+		<div className=" mainWrapper">
 			<h1 className="mb-20 text-3xl font-bold md:text-5xl mt-7 lg:mt-0">
 				ChatGPT
 			</h1>

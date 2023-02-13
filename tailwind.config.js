@@ -10,6 +10,7 @@ module.exports = {
 			colors: {
 				primary: '#343531',
 				secondary: '#202123',
+				chatbg: '#434654',
 				green: '#11A382',
 			},
 		},

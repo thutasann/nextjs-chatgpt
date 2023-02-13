@@ -77,7 +77,7 @@ function ChatInput({ chatId }: Props) {
 		<div className="chatForm">
 			<form
 				onSubmit={sendMessage}
-				className="flex p-5 space-x-5"
+				className="flex w-full p-5 space-x-5"
 			>
 				<input
 					value={prompt}
