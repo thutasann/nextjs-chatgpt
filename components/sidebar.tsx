@@ -8,6 +8,7 @@ import { db } from '@/firebase';
 import ChatRow from './chat-rows';
 import Image from 'next/image';
 import Link from 'next/link';
+import Modalselection from './model-selection';
 
 function SideBar() {
 	const { data: session } = useSession();
@@ -41,7 +42,9 @@ function SideBar() {
 			<div className="flex-1">
 				<div>
 					<NewChat />
-					<div>{/* ModalSelection */}</div>
+					<div className="hidden sm:inline">
+						<Modalselection />
+					</div>
 					<div className="mt-4">
 						{chats?.docs?.map((chat) => (
 							<ChatRow
