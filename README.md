@@ -1,10 +1,12 @@
 # CHATGPT CLONE 🤖
 
+Live Url - <https://nextjs-chatgpt.vercel.app/>
+
 This is the ChatGPT Clone built with
 
 - 🚀 Nextjs13
 - 🚀 NextAuth
-- 🚀 OpenAPI
+- 🚀 OpenAI
 - 🚀 Firebase
 - 🚀 TailwindCSS
 - 🚀 SWR

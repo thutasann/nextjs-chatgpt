@@ -33,7 +33,7 @@
 	}
 
 	.chatForm {
-		@apply text-sm text-gray-400 rounded-lg bg-gray-700/50;
+		@apply text-sm text-gray-400 bg-gray-700/50;
 	}
 
 	.chatInput {
@@ -41,6 +41,6 @@
 	}
 
 	.chatSubmitBtn {
-		@apply px-4 py-2 font-bold text-white transition-colors duration-700 ease-in-out rounded-md cursor-pointer bg-green hover:opacity-70 disabled:bg-gray-300 disabled:cursor-not-allowed;
+		@apply px-4 py-2 font-bold text-white transition-colors duration-700 ease-in-out rounded-md cursor-pointer bg-green hover:opacity-70 disabled:bg-gray-300 disabled:cursor-not-allowed disabled:text-slate-500;
 	}
 }
