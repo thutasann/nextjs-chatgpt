@@ -1,3 +1,4 @@
+import ClientProvider from '@/components/client-provider';
 import Login from '@/components/login';
 import SessionProvider from '@/components/session-provider';
 import SideBar from '@/components/sidebar';
@@ -24,7 +25,8 @@ export default async function RootLayout({
 							<div className="sidebarWrapper">
 								<SideBar />
 							</div>
-							<div className="bg-primary flex-1">{children}</div>
+							<ClientProvider />
+							<div className="flex-1 bg-primary">{children}</div>
 						</div>
 					)}
 				</SessionProvider>
