@@ -45,7 +45,13 @@ function SideBar() {
 					<div className="hidden sm:inline">
 						<Modalselection />
 					</div>
-					<div className="mt-4">
+					<div className="flex flex-col my-2 mt-4 space-y-2">
+						{loading && (
+							<div className="text-center text-white animate-pulse">
+								<p>Loading Chats...</p>
+							</div>
+						)}
+
 						{chats?.docs?.map((chat) => (
 							<ChatRow
 								key={chat.id}
