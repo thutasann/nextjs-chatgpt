@@ -6,6 +6,8 @@ import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { useSession } from 'next-auth/react';
 import React, { FormEvent, useState } from 'react';
 import { toast } from 'react-hot-toast';
+import useSWR from 'swr';
+import Modalselection from './model-selection';
 
 type Props = {
 	chatId: string;
@@ -15,8 +17,9 @@ function ChatInput({ chatId }: Props) {
 	const [prompt, setPrompt] = useState('');
 	const { data: session } = useSession();
 
-	// TODO: useSWR to get modal
-	const model = 'davinci';
+	const { data: model } = useSWR('model', {
+		fallbackData: 'text-davinci-003',
+	});
 
 	/**
 	 * Send Message
@@ -75,6 +78,10 @@ function ChatInput({ chatId }: Props) {
 
 	return (
 		<div className="chatForm">
+			<div className=" w-[300px] p-4">
+				<p>Choose Model: </p>
+				<Modalselection />
+			</div>
 			<form
 				onSubmit={sendMessage}
 				className="flex w-full p-5 space-x-5"
@@ -88,6 +95,7 @@ function ChatInput({ chatId }: Props) {
 					spellCheck={false}
 					disabled={!session}
 				/>
+
 				<button
 					type="submit"
 					disabled={!prompt || !session}
@@ -96,8 +104,6 @@ function ChatInput({ chatId }: Props) {
 					<PaperAirplaneIcon className="w-4 h-4 -rotate-45" />
 				</button>
 			</form>
-
-			<div>{/* Modal Selection */}</div>
 		</div>
 	);
 }

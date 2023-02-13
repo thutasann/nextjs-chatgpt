@@ -42,9 +42,9 @@ function SideBar() {
 			<div className="flex-1">
 				<div>
 					<NewChat />
-					<div className="hidden sm:inline">
+					{/* <div className="hidden sm:inline">
 						<Modalselection />
-					</div>
+					</div> */}
 					<div className="flex flex-col my-2 mt-4 space-y-2">
 						{loading && (
 							<div className="text-center text-white animate-pulse">
