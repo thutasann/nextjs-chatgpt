@@ -5,6 +5,9 @@
 *::selection {
 	@apply text-white bg-green;
 }
+*::-webkit-scrollbar {
+	@apply hidden;
+}
 
 @layer components {
 	.sidebarWrapper {
@@ -30,7 +33,7 @@
 		@apply flex items-center justify-center px-5 py-3 space-x-2 text-sm text-gray-300 transition-all duration-700 ease-out rounded-lg cursor-pointer hover:bg-gray-700/70;
 	}
 	.chatForm {
-		@apply fixed bottom-0 w-full text-sm text-gray-400 bg-gray-700 shadow-lg;
+		@apply fixed bottom-0 w-full text-sm text-gray-400 bg-gray-700;
 	}
 
 	.chatInput {
@@ -39,9 +42,5 @@
 
 	.chatSubmitBtn {
 		@apply px-4 py-2 font-bold text-white transition-colors duration-700 ease-in-out rounded-md cursor-pointer bg-green hover:opacity-70 disabled:bg-gray-300 disabled:cursor-not-allowed disabled:text-slate-500;
-	}
-
-	.messgeWrapper::-webkit-scrollbar {
-		@apply hidden;
 	}
 }

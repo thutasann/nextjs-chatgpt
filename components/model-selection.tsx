@@ -10,7 +10,7 @@ const customStyles = {
 	singleValue: (provided: any) => ({
 		...provided,
 		height: '100%',
-		color: '#fff',
+		color: '#c4bfbf',
 		paddingTop: '3px',
 	}),
 };
@@ -33,7 +33,7 @@ function Modalselection() {
 				isLoading={isLoading}
 				menuPosition="fixed"
 				classNames={{
-					control: (state) => 'bg-[#434654] border-[#434654] text-[#fff]',
+					control: (state) => 'bg-[#434654] border-[#434654]',
 				}}
 				onChange={(e) => setModel(e.value)}
 			/>

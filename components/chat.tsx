@@ -30,7 +30,7 @@ function Chat({ chatId }: Props) {
 	);
 
 	return (
-		<div className="h-[96vh] overflow-auto messgeWrapper ">
+		<div className="">
 			{messages?.empty && (
 				<>
 					<p className="mt-10 text-center text-white font-[700]">

@@ -22,7 +22,7 @@ function SideBar() {
 	);
 
 	return (
-		<div className="flex flex-col min-h-screen p-2">
+		<div className="fixed flex flex-col max-w-xs min-h-screen md:min-w-[20rem] p-2">
 			{/* Logo */}
 			<div className="mx-auto mb-4">
 				<Link href={'/'}>
@@ -67,7 +67,10 @@ function SideBar() {
 				/* eslint-disable @next/next/no-img-element */
 				<img
 					onClick={() => signOut()}
-					src={session.user?.image!}
+					src={
+						session.user?.image! ||
+						'https://www.freeiconspng.com/thumbs/human-icon-png/human-icon-png-png-20.png'
+					}
 					alt={session?.user?.name!}
 					className="w-12 h-12 mx-auto mb-6 rounded-full cursor-pointer hover:opacity-50"
 				/>

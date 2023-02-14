@@ -13,11 +13,14 @@ export default function Message({ message }: Props) {
 			<div className="flex max-w-2xl px-10 mx-auto space-x-5">
 				{/* eslint-disable-next-line @next/next/no-img-element */}
 				<img
-					src={message.user.avatar}
+					src={
+						message?.user?.avatar ||
+						'https://www.freeiconspng.com/thumbs/human-icon-png/human-icon-png-png-20.png'
+					}
 					alt={message.user.name}
 					className="w-8 h-8"
 				/>
-				<p className="pt-1 text-sm">{message.text}</p>
+				<p className="flex-wrap pt-1 break-all">{message.text}</p>
 			</div>
 		</div>
 	);
